@@ -70,7 +70,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git zsh-syntax-highlighting )
 
 source $ZSH/oh-my-zsh.sh
 
@@ -102,6 +102,9 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 alias ls='ls --color'
 alias s='sudo'
+alias bat='batcat'
+alias c='clear'
+alias 'tmuxt ls'='stmux list'
 #
 #
 export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
@@ -121,3 +124,7 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 # bun completions
 [ -s "/home/wint/.bun/_bun" ] && source "/home/wint/.bun/_bun"
 . "/home/wint/.deno/env"
+
+
+export PATH=$PATH:/usr/local/go/bin
+fpath+=${ZDOTDIR:-~}/.zsh_functions
