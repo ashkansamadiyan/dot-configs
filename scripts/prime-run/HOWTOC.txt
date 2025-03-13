@@ -1,0 +1,5 @@
+shc -f prime-run
+./prime-run.x your_application
+
+
+
